@@ -1,0 +1,181 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 1em 0;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+  
+  header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  header ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header ul li {
+    margin: 0 15px;
+  }
+  
+  header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  header ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Content */
+  main {
+    flex: 1;
+    padding: 2em;
+  }
+  
+  .carousel {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: #fff5f5;
+}
+  
+.carousel-item {
+  position: relative; /* Important to place the heading relative to the carousel item */
+  min-width: 300px;
+  text-align: center;
+  background-color: white;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+
+
+  
+  /* Product Grid Section */
+  .products-grid {
+    padding: 2em;
+    background-color: #ffffff;
+  }
+  
+  .products-grid h1 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #d32f2f;
+  }
+  
+  .grid-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product-card {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    text-align: center;
+    background-color: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .product-card h3 {
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  /* Updates Section */
+  .updates {
+    padding: 2em;
+    background-color: #fdf2f2;
+    text-align: center;
+  }
+  
+  .updates h2 {
+    margin-bottom: 1em;
+    color: #d32f2f;
+  }
+  
+  .updates ul {
+    list-style: none;
+  }
+  
+  .updates ul li {
+    margin: 10px 0;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #b71c1c;
+    color: white;
+    margin-top: auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header nav {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .grid-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .carousel {
+      flex-direction: column;
+    }
+  
+    .carousel-item {
+      min-width: 100%;
+    }
+  }
+  
